@@ -19,9 +19,9 @@ Console.WriteLine($"New version of {randNumber} is {newNumber}");
 
 /*Напишите программу, которая принимает на вход число 
 и проверяет, кратно ли оно одновременно a и b.
+*/
 
-
-bool IsDividable(int num, int div1, int div2)
+bool IsDivisible(int num, int div1, int div2)
 {
    // if (num % div1 == 0 && num % div2 == 0)
    //     return true;
@@ -30,18 +30,22 @@ bool IsDividable(int num, int div1, int div2)
     return num % div1 == 0 && num % div2 == 0; //можно итак решить 
 }
 
-Console.Writer("Input a number for checking: ");
-int number = Convert.ToInt32(Console.RedLine());
-Console.Writer("Input a first divider: ");
-int number = Convert.ToInt32(Console.RedLine());
-Console.Writer("Input a second divider: ");
-int number = Convert.ToInt32(Console.RedLine());
+Console.Write("Input a number for checking: ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Input a first divider: ");
+int divider1 = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Input a second divider: ");
+int divider2 = Convert.ToInt32(Console.ReadLine());
 
 bool res = IsDivisible(number, divider1, divider2);
 
 if(res) Console.Write("Yes");
 else Console.Write("No");
-*/
+ 
+
+
 
 /*Напишите программу, которая выводит случайное число 
 из отрезка [10, 99] и показывает наибольшую цифру числа.
@@ -70,7 +74,7 @@ Console.WriteLine($"max digit o {rndNumber} is {maxDigit}");
 
 /*Напишите программу, которая принимает на вход два числа и проверяет, 
 является ли одно число квадратом другого.
-*/
+
 
 bool IsPowerOfAnyNumbers(int number1, int number2){
     
@@ -87,3 +91,4 @@ bool result = IsPowerOfAnyNumbers(number1, number2);
 
 if (result) Console.WriteLine("Yes");
 else Console.WriteLine("No");
+*/
